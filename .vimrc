@@ -3,25 +3,27 @@
 "
 " ==================== TABS ==========================================
 "
-set tabstop=4               " number of visual spaces per TAB
-set softtabstop=4           " number of spaces in tab when editing
+set tabstop=4                          " number of visual spaces per TAB
+set softtabstop=4                      " number of spaces in tab when editing
 
 " ==================== COLOURS ======================================
 "
-colorscheme badwolf         " awesome colorscheme
+colorscheme badwolf                    " awesome colorscheme
+set t_Co=256                           " 256-color support
+let g:Powerline_symbols = "fancy"      " fancy symbols for powerline
 
 " ==================== UI ===========================================
 "
-set number                  " show line numbers
-set showcmd                 " show commnd in bottom bar
-set cursorline              " highlight current line
-set wildmenu                " visual autocomplete for command menu
-set showmatch               " highlight matching [{()}]
+set number                             " show line numbers
+set showcmd                            " show commnd in bottom bar
+set cursorline                         " highlight current line
+set wildmenu                           " visual autocomplete for command menu
+set showmatch                          " highlight matching [{()}]
 
 " =================== SEARCH ========================================
 "
-set incsearch               " search as characters are entered
-set hlsearch                " highlight matches
+set incsearch                          " search as characters are entered
+set hlsearch                           " highlight matches
 
 " =================== NAVIGATE ======================================
 "

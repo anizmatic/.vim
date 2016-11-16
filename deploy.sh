@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo submodule init...
+git submodule init
+echo submodule update...
+git submodule update
