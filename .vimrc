@@ -1,6 +1,16 @@
 " VIM Settings
 " Neha Repal 2016
 "
+
+"==================== PATHOGEN =======================================
+" Plugin manager:
+" Lets you store your plugins in individual folders
+" inside the .vim/bundle directory (also as git submodules).
+" This line initializes it and loads all plugins:
+"
+set nocompatible 
+execute pathogen#infect()
+
 " ==================== TABS ==========================================
 "
 set tabstop=4                          " number of visual spaces per TAB
@@ -9,8 +19,13 @@ set softtabstop=4                      " number of spaces in tab when editing
 " ==================== COLOURS ======================================
 "
 colorscheme badwolf                    " awesome colorscheme
+
+"===================== POWERLINE ====================================
+"
 set t_Co=256                           " 256-color support
+set encoding=utf-8                     " Make symbols work
 let g:Powerline_symbols = "fancy"      " fancy symbols for powerline
+set laststatus=2                       " Always show the status bar
 
 " ==================== UI ===========================================
 "
