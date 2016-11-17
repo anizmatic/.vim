@@ -11,21 +11,39 @@
 set nocompatible 
 execute pathogen#infect()
 
+
 " ==================== TABS ==========================================
 "
 set tabstop=4                          " number of visual spaces per TAB
 set softtabstop=4                      " number of spaces in tab when editing
 
+
 " ==================== COLOURS ======================================
 "
 colorscheme badwolf                    " awesome colorscheme
 
-"===================== POWERLINE ====================================
+
+"===================== PLUGINS ======================================
+"
+"Powerline
 "
 set t_Co=256                           " 256-color support
 set encoding=utf-8                     " Make symbols work
 let g:Powerline_symbols = "fancy"      " fancy symbols for powerline
 set laststatus=2                       " Always show the status bar
+
+
+" NERDTree
+"
+let NERDTreeShowHidden=1               " Show hidden files
+" autocmd vimenter * NERDTree          " Start nerdtree when vim starts
+
+
+" Taglist
+"
+let Tlist_Auto_Open = 1                 " Auto open the taglist
+nnoremap <silent> <F8> :TlistToggle<CR> " Map toggle command to  
+let Tlist_GainFocus_On_ToggleOpen = 1   " Jump to taglist when opened
 
 " ==================== UI ===========================================
 "
@@ -35,10 +53,12 @@ set cursorline                         " highlight current line
 set wildmenu                           " visual autocomplete for command menu
 set showmatch                          " highlight matching [{()}]
 
+
 " =================== SEARCH ========================================
 "
 set incsearch                          " search as characters are entered
 set hlsearch                           " highlight matches
+
 
 " =================== NAVIGATE ======================================
 "
