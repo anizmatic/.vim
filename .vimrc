@@ -31,7 +31,7 @@ set t_Co=256                           " 256-color support
 set encoding=utf-8                     " Make symbols work
 let g:Powerline_symbols = "fancy"      " fancy symbols for powerline
 set laststatus=2                       " Always show the status bar
-
+let g:airline_powerline_fonts = 1      " Integrate airline
 
 " NERDTree
 "
@@ -41,7 +41,7 @@ let NERDTreeShowHidden=1               " Show hidden files
 
 " Taglist
 "
-let Tlist_Auto_Open = 1                 " Auto open the taglist
+" let Tlist_Auto_Open = 1                 " Auto open the taglist
 nnoremap <silent> <F8> :TlistToggle<CR> " Map toggle command to  
 let Tlist_GainFocus_On_ToggleOpen = 1   " Jump to taglist when opened
 
