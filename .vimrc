@@ -20,6 +20,7 @@ set softtabstop=4                      " number of spaces in tab when editing
 
 " ==================== COLOURS ======================================
 "
+syntax enable                          " colors!
 colorscheme badwolf                    " awesome colorscheme
 
 
@@ -41,9 +42,22 @@ let NERDTreeShowHidden=1               " Show hidden files
 
 " Taglist
 "
-" let Tlist_Auto_Open = 1                 " Auto open the taglist
-nnoremap <silent> <F8> :TlistToggle<CR> " Map toggle command to  
-let Tlist_GainFocus_On_ToggleOpen = 1   " Jump to taglist when opened
+" let Tlist_Auto_Open = 1                " Auto open the taglist
+nnoremap <silent> <F8> :TlistToggle<CR>  " Map toggle command to  
+let Tlist_GainFocus_On_ToggleOpen = 1    " Jump to taglist when opened
+
+
+" Ctrlp
+"
+set runtimepath^=~/.vim/bundle/ctrlp.vim "start ctrlp at runtime
+let g:ctrlp_cmd = 'CtrlP'                "change default mapping
+
+
+" YouCompleteMe
+"
+let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
+
 
 " ==================== UI ===========================================
 "
@@ -76,3 +90,6 @@ nnoremap ^ <nop>
 
 " highlight last inserted text
 nnoremap gV `[v`]
+
+" key mappings
+nnoremap <F9> :so ~/.vimrc<CR>

@@ -25,3 +25,9 @@
 [submodule "bundle/powerline_fonts"]
 	path = bundle/powerline_fonts
 	url = https://github.com/powerline/fonts.git
+[submodule "bundle/ctrlpvim"]
+	path = bundle/ctrlpvim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
+[submodule "bundle/You-Complete-Me"]
+	path = bundle/You-Complete-Me
+	url = https://github.com/Valloric/YouCompleteMe.git
