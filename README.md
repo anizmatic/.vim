@@ -13,5 +13,8 @@ git submodule add *git-repo-link* bundle/*new-name*
  * Change the font in iTerm preferences to *anything* Powerline
  * Source vim
 
+**You Complete Me**
+
+Follow this [link](http://www.alexeyshmalko.com/2014/youcompleteme-ultimate-autocomplete-plugin-for-vim/) else it just doesn't work.
 
 

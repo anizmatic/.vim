@@ -93,3 +93,10 @@ nnoremap gV `[v`]
 
 " key mappings
 nnoremap <F9> :so ~/.vimrc<CR>
+
+" =================== C =============================================
+"
+map <F8> : !gcc % && ./a.out <CR>      " map F8 to compile and run c program
+
+
+
