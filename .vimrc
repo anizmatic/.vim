@@ -66,7 +66,8 @@ set showcmd                            " show commnd in bottom bar
 set cursorline                         " highlight current line
 set wildmenu                           " visual autocomplete for command menu
 set showmatch                          " highlight matching [{()}]
-
+highlight ExtraWhitespace ctermbg=red guibg=red " highlight white space
+match ExtraWhitespace /\s\+$/
 
 " =================== SEARCH ========================================
 "
