@@ -22,4 +22,5 @@ TL,DR:
 In the You-Complete-Me folder-
 
 git submodule update --init --recursive
+
 ./install.sh --clang-completer
