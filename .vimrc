@@ -8,7 +8,7 @@
 " inside the .vim/bundle directory (also as git submodules).
 " This line initializes it and loads all plugins:
 "
-set nocompatible 
+set nocompatible
 execute pathogen#infect()
 
 
@@ -43,7 +43,7 @@ let NERDTreeShowHidden=1               " Show hidden files
 " Taglist
 "
 " let Tlist_Auto_Open = 1                " Auto open the taglist
-nnoremap <silent> <F8> :TlistToggle<CR>  " Map toggle command to  
+nnoremap <silent> <F8> :TlistToggle<CR>  " Map toggle command to
 let Tlist_GainFocus_On_ToggleOpen = 1    " Jump to taglist when opened
 
 
@@ -98,6 +98,10 @@ nnoremap <F9> :so ~/.vimrc<CR>
 " =================== C =============================================
 "
 map <F8> : !gcc % && ./a.out <CR>      " map F8 to compile and run c program
+
+" =================== AUTO CMDS =====================================
+"
+autocmd VimEnter * source ~/.vimrc
 
 
 
