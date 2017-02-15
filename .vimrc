@@ -11,12 +11,15 @@
 set nocompatible
 execute pathogen#infect()
 
+" =================== AUTO CMDS =====================================
+"
+"autocmd BufEnter * source ~/.vimrc
 
 " ==================== TABS ==========================================
 "
 set tabstop=4                          " number of visual spaces per TAB
 set softtabstop=4                      " number of spaces in tab when editing
-
+set backspace=indent,eol,start
 
 " ==================== COLOURS ======================================
 "
@@ -28,9 +31,11 @@ colorscheme badwolf                    " awesome colorscheme
 "
 "Powerline
 "
+set guifont=Roboto\ Mono\ for\ Powerline
+
 set t_Co=256                           " 256-color support
 set encoding=utf-8                     " Make symbols work
-let g:Powerline_symbols = "fancy"      " fancy symbols for powerline
+let g:Powerline_symbols = 'unicode'     " fancy symbols for powerline
 set laststatus=2                       " Always show the status bar
 let g:airline_powerline_fonts = 1      " Integrate airline
 
@@ -98,10 +103,3 @@ nnoremap <F9> :so ~/.vimrc<CR>
 " =================== C =============================================
 "
 map <F8> : !gcc % && ./a.out <CR>      " map F8 to compile and run c program
-
-" =================== AUTO CMDS =====================================
-"
-autocmd VimEnter * source ~/.vimrc
-
-
-
