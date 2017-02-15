@@ -7,18 +7,17 @@ git submodule add *git-repo-link* bundle/*new-name*
 
 ./deploy.sh
 
-**Powerline + Mac (iTerm)**
-
- * Download powerline fonts
- * Change the font in iTerm preferences to *anything* Powerline
- * Source vim
-
 **To remove a submodule** -
 
 git submodule deinit -f bundle/<>
 
 git rm -rf bundle/<>
 
+**Powerline + Mac (iTerm)**
+
+ * Download powerline fonts
+ * Change the font in iTerm preferences to *anything* Powerline
+ * Source vim
 
 **You Complete Me**
 
