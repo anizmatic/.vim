@@ -39,18 +39,6 @@ let g:Powerline_symbols = 'unicode'     " fancy symbols for powerline
 set laststatus=2                       " Always show the status bar
 let g:airline_powerline_fonts = 1      " Integrate airline
 
-" NERDTree
-"
-let NERDTreeShowHidden=1               " Show hidden files
-" autocmd vimenter * NERDTree          " Start nerdtree when vim starts
-
-
-" Taglist
-"
-" let Tlist_Auto_Open = 1                " Auto open the taglist
-nnoremap <silent> <F8> :TlistToggle<CR>  " Map toggle command to
-let Tlist_GainFocus_On_ToggleOpen = 1    " Jump to taglist when opened
-
 
 " Ctrlp
 "
@@ -63,6 +51,10 @@ let g:ctrlp_cmd = 'CtrlP'                "change default mapping
 let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
 
+" Indent Lines
+" 
+let g:indentLine_color_term = 239      " customize conceal color 
+let g:indentLine_char = '┆'            " customize character for line
 
 " ==================== UI ===========================================
 "
