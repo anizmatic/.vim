@@ -32,3 +32,6 @@
 [submodule "bundle/indent-lines"]
 	path = bundle/indent-lines
 	url = https://github.com/Yggdroot/indentLine.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic
