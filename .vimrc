@@ -31,7 +31,7 @@ colorscheme badwolf                    " awesome colorscheme
 "
 "Powerline
 "
-set guifont=Roboto\ Mono\ for\ Powerline
+"set guifont=Roboto\ Mono\ for\ Powerline
 
 set t_Co=256                           " 256-color support
 set encoding=utf-8                     " Make symbols work
