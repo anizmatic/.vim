@@ -51,11 +51,6 @@ let g:ctrlp_cmd = 'CtrlP'                "change default mapping
 let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
 
-" Indent Lines
-"
-let g:indentLine_color_term = 237      " customize conceal color
-let g:indentLine_char = '|'            " customize character for line
-
 " Syntastic
 "
 set statusline+=%#warningmsg#
@@ -76,6 +71,12 @@ set wildmenu                           " visual autocomplete for command menu
 set showmatch                          " highlight matching [{()}]
 highlight ExtraWhitespace ctermbg=red guibg=red " highlight white space
 match ExtraWhitespace /\s\+$/
+
+" Indent Lines
+"
+set list
+set listchars=tab:\|\ 
+
 
 " =================== SEARCH ========================================
 "
