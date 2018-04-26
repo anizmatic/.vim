@@ -91,7 +91,7 @@ match ExtraWhitespace /\s\+$/
 " Indent Lines
 "
 set list
-set listchars=tab:\|\ 
+set listchars=tab:\|\
 
 
 " =================== SEARCH ========================================
