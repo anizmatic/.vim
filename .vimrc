@@ -2,7 +2,7 @@
 " Neha Repal 2016
 "
 
-"==================== PATHOGEN =======================================
+" ==================== PATHOGEN =======================================
 " Plugin manager:
 " Lets you store your plugins in individual folders
 " inside the .vim/bundle directory (also as git submodules).
@@ -13,7 +13,7 @@ execute pathogen#infect()
 
 " =================== AUTO CMDS =====================================
 "
-"autocmd BufEnter * source ~/.vimrc
+" autocmd BufEnter * source ~/.vimrc
 
 " ==================== TABS ==========================================
 "
@@ -27,11 +27,11 @@ syntax enable                          " colors!
 colorscheme badwolf                    " awesome colorscheme
 
 
-"===================== PLUGINS ======================================
+" ===================== PLUGINS ======================================
 "
-"Powerline
+" Powerline
 "
-"set guifont=Roboto\ Mono\ for\ Powerline
+set guifont=Roboto\ Mono\ for\ Powerline
 
 set t_Co=256                           " 256-color support
 set encoding=utf-8                     " Make symbols work
@@ -54,7 +54,7 @@ let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.p
 " Syntastic
 "
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%{exists('g:loaded_syntastic_plugin')?SyntasticStatuslineFlag():''}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
@@ -75,7 +75,7 @@ match ExtraWhitespace /\s\+$/
 " Indent Lines
 "
 set list
-set listchars=tab:\|\ 
+set listchars=tab:\|\
 
 
 " =================== SEARCH ========================================

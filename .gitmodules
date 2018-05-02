@@ -22,19 +22,15 @@
 [submodule "bundle/ctrlpvim"]
 	path = bundle/ctrlpvim
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
-[submodule "bundle/You-Complete-Me"]
-	path = bundle/You-Complete-Me
-	url = https://github.com/Valloric/YouCompleteMe.git
-	ignore = dirty
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = https://github.com/python-mode/python-mode.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic
-[submodule "bundle/ultisnips"]
-	path = bundle/ultisnips
-	url = https://github.com/SirVer/ultisnips.git
 [submodule "bundle/snippets"]
 	path = bundle/snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
