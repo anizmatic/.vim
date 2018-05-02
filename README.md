@@ -4,11 +4,12 @@ source control vim plugins
 **To add a new submodule -**
 
 $ git submodule add *git-repo-link* bundle/*new-name*
+
 $ ./deploy.sh
 
 **To remove a submodule** -
 
-$ ./remove_bundle <submodule name>
+$ ./remove_bundle *submodule name*
 
 **Powerline + Mac (iTerm)**
 
