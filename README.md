@@ -9,7 +9,7 @@ $ ./deploy.sh
 
 **To remove a submodule** -
 
-$ ./remove_bundle *submodule name*
+$ ./remove_bundle *submodule-name*
 
 **Powerline + Mac (iTerm)**
 
